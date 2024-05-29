@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Personnes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">Ajouter une Personne</div>
+        <form id="personForm">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="firstname" name="firstname" required>
+                    <div class="underline"></div>
+                    <label for="firstname">Prénom</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="lastname" name="lastname" required>
+                    <div class="underline"></div>
+                    <label for="lastname">Nom</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="number" id="age" name="age" required>
+                    <div class="underline"></div>
+                    <label for="age">Âge</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="street" name="street" required>
+                    <div class="underline"></div>
+                    <label for="street">Rue</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="city" name="city" required>
+                    <div class="underline"></div>
+                    <label for="city">Ville</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="postalcode" name="postalcode" required>
+                    <div class="underline"></div>
+                    <label for="postalcode">Code Postal</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="phone" name="phone" required>
+                    <div class="underline"></div>
+                    <label for="phone">Téléphone</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="email" id="email" name="email" required>
+                    <div class="underline"></div>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <input type="submit" value="Ajouter">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <h2>Liste des Personnes</h2>
+    <div class="table-container">
+        <table id="personTable">
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Âge</th>
+                    <th>Rue</th>
+                    <th>Ville</th>
+                    <th>Code Postal</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données seront ajoutées ici -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
